@@ -7,8 +7,8 @@ export default function MultiplicationTable({ base, rows }: MultiplicationTableP
   const lines = Array.from({ length: rows }, (_, i) => i + 1);
 
   return (
-    <div className="w-full max-w-sm rounded-2xl border border-pink-300 bg-pink-100 shadow-lg shadow-pink-200/50 overflow-hidden">
-      <h2 className="text-center text-2xl font-bold text-pink-700 py-5 border-b border-pink-200">
+    <div className="w-full max-w-sm rounded-2xl border border-lime-300 bg-lime-100 shadow-lg shadow-lime-200/50 overflow-hidden">
+      <h2 className="text-center text-2xl font-bold text-lime-700 py-5 border-b border-lime-200">
         Table of {base}
       </h2>
       <ul>
@@ -16,14 +16,14 @@ export default function MultiplicationTable({ base, rows }: MultiplicationTableP
           <li
             key={n}
             className={`flex items-center justify-between px-6 py-3 text-lg ${
-              n % 2 === 0 ? 'bg-pink-50' : 'bg-pink-100'
+              n % 2 === 0 ? 'bg-lime-50' : 'bg-lime-100'
             }`}
           >
-            <span className="text-pink-900 font-medium">
+            <span className="text-lime-900 font-medium">
               {base} × {n}
             </span>
-            <span className="text-pink-400 font-bold">=</span>
-            <span className="text-2xl font-extrabold text-pink-600 tabular-nums">
+            <span className="text-lime-400 font-bold">=</span>
+            <span className="text-2xl font-extrabold text-lime-600 tabular-nums">
               {base * n}
             </span>
           </li>
